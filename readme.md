@@ -59,7 +59,7 @@ In addition to direct environment conditional names, conditional names can also 
 }
 ```
 
-In the above, we are able to provide different entry points for the CommonJS version in the browser and Node.js as well as the ES module version in the browser and Node.js.
+In the above, we are able to provide different entry points for the ES module version in the browser and Node.js, while falling back to the CommonJS version.
 
 ### Extending Environment Entry Names
 

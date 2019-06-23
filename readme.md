@@ -61,6 +61,10 @@ In addition to direct environment conditional names, conditional names can also 
 
 In the above, we are able to provide different entry points for the ES module version in the browser and Node.js, while falling back to the CommonJS version.
 
+### Production / Development Environments
+
+It could even be possible to define `"production"` and `"development"` environment names, so long as hosts or tools provide a way to set which environment the execution should be in. For example `node --production x.js` might default to using `"production"` paths in entry mappings, while `node x.js` would default to the `"development"` path. Or similarly for build tools. Again composibility of conditions here is key to enabling these different workflows.
+
 ### Extending Environment Entry Names
 
 Hosts can define custom conditional names for themselves and support them. For example, React Native can define `"react-native"` and Electron can define `"electron"` just fine.
